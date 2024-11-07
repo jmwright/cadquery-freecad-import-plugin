@@ -16,13 +16,8 @@ jobs:
           create-args: >-
             python=3.11
             freecad=0.21.2
-
-      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -e .
           pip install -e .[dev]
-
-      - name: Run tests
-        run: |
           python -m pytest -v
