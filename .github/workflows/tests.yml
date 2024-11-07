@@ -13,7 +13,7 @@ jobs:
           python-version: 3.11
       - name: Install dependencies
         run: |
-          mamba install freecad:freecad
+          conda install freecad:freecad
           python -m pip install --upgrade pip
           pip install -e .
           pip install -e .[dev]
