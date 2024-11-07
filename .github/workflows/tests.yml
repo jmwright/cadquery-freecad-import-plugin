@@ -12,9 +12,9 @@ jobs:
       - uses: mamba-org/setup-micromamba@v2
         with:
           environment-name: tests
-          create-args: >-
+          create-args: |
             python=3.11
-            freecad
+            freecad=0.21.2
 
       - name: Install dependencies
         - run: |
