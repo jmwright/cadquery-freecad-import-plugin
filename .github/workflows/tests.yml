@@ -11,7 +11,8 @@ jobs:
         with:
           python-version: 3.11
           mamba-version: "*"
-          # channels: conda-forge,defaults
+          channels: conda-forge,defaults
+          auto-activate-base: true
           # allow-softlinks: true
           # channel-priority: flexible
           # activate-environment: tests
