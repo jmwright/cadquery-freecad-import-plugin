@@ -16,6 +16,7 @@ jobs:
           auto-update-conda: false
           python-version: 3.11
           use-only-tar-bz2: true
+      - name: Install dependencies
         run: |
           mamba install -y freecad=0.21.2
           python -m pip install --upgrade pip
