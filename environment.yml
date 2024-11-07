@@ -1,0 +1,28 @@
+name: tests
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - ipython
+  - ocp=7.7.2
+  - vtk=*=qt*
+  - pyparsing>=2.1.9
+  - sphinx=5.0.1
+  - sphinx_rtd_theme
+  - mypy
+  - codecov
+  - pytest
+  - pytest-cov
+  - ezdxf
+  - typing_extensions
+  - nlopt
+  - path
+  - casadi
+  - typish
+  - multimethod >=1.11,<2.0
+  - typed-ast
+  - regex
+  - pathspec
+  - click
+  - appdirs
+  - pip
