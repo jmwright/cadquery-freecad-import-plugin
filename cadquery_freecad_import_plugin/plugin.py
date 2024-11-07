@@ -50,6 +50,7 @@ def _fc_path():
             str(home_dir) + "/miniforge/envs/freecad/lib/",
             str(home_dir) + "/conda/envs/freecad/lib/",
             str(home_dir) + "/condaforge/envs/freecad/lib/",
+            str(home_dir) + "/micromamba/envs/freecad/lib/",
         ]:
             if os.path.exists(_PATH):
                 return _PATH
