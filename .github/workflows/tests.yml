@@ -9,7 +9,7 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v4
 
-      - name: Setup Mamba
+      - name: Install and Test
         run: |
           conda create -y -n freecad -c conda-forge python=3.11 freecad=0.21.2
           conda init bash
