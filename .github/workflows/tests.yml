@@ -9,10 +9,9 @@ jobs:
       - uses: actions/checkout@v3
       - uses: mamba-org/setup-micromamba@v1
         with:
-          environment-name: test-env
+          environment-name: tests
           create-args: >-
             python=3.11
-            freecad
       - name: Install dependencies
         - run: |
           python -m pip install --upgrade pip
