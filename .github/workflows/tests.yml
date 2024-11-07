@@ -15,6 +15,7 @@ jobs:
           bash miniforge.sh -b -p $HOME/miniforge
           conda create -y -c conda-forge -n freecad python=3.11 freecad=0.21.2
           source /home/runner/miniforge/bin/activate
+          conda info --envs
           conda activate freecad
           python -m pip install --upgrade pip
           pip install -e .
