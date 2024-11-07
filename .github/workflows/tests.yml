@@ -7,15 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: conda-incubator/setup-miniconda@v3
+      - uses: mamba-org/setup-micromamba@v1
         with:
-          channels: conda-forge
-          channel-priority: strict
-          mamba-version: "*"
-          activate-environment: tests
-          auto-update-conda: false
-          python-version: 3.11
-          use-only-tar-bz2: true
+          environment-name: test-env
+          create-args: >-
+            python=3.11
       - name: Install dependencies
         run: |
           mamba install -y freecad=0.21.2
