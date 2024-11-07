@@ -14,7 +14,7 @@ jobs:
           environment-name: tests
           create-args: >-
             python=3.11
-            freecad=0.21.2
+            freecad
 
       - name: Install dependencies
         - run: |
