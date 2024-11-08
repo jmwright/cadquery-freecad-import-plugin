@@ -19,10 +19,3 @@ jobs:
           pip install -e .
           pip install -e .[dev]
           python -m pytest -v
-
-        # uses: mamba-org/setup-micromamba@v2
-        # with:
-        #   environment-name: freecad
-        #   create-args: >-
-        #     python=3.11
-        #     freecad=0.21.2
